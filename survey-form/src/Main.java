@@ -1,11 +1,19 @@
 import javax.swing.*;
 import packages.informationPage;
 
+import java.awt.*;
+
 public class Main {
+
+    public static class CustomFonts {
+
+        public static final Font FONT = new Font("Arial", Font.BOLD, 15);
+    }
 
     public static void main(String[] args) {
         // Create and configure the main frame
         JFrame frame = new JFrame("فرم نظرسنجی");
+        frame.setFont(CustomFonts.FONT);
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -18,10 +26,12 @@ public class Main {
 
         // Create title label
         JLabel title = new JLabel("فرم نظرسنجی");
+        title.setFont(CustomFonts.FONT);
         title.setBounds(10, 10, 100, 20);
 
         // Create start button
         JButton startButton = new JButton("شروع!");
+        startButton.setFont(CustomFonts.FONT);
         startButton.setBounds(10, 40, 100, 20);
 
         // Add components to the panel
