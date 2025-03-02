@@ -21,7 +21,7 @@ public class Main {
 
         // Create and configure the main panel
         JPanel panel = new JPanel();
-        panel.setLayout(null);
+        panel.setLayout(new BorderLayout());
         panel.setBounds(0, 0, 600, 600);
 
         // Create title label
@@ -35,8 +35,8 @@ public class Main {
         startButton.setBounds(10, 40, 100, 20);
 
         // Add components to the panel
-        panel.add(title);
-        panel.add(startButton);
+        panel.add(title, BorderLayout.NORTH);
+        panel.add(startButton, BorderLayout.CENTER);
 
         // Add panel to the frame
         frame.add(panel);
