@@ -21,7 +21,7 @@ public class thankYouPage {
         // Create thank you label
         JLabel thankYouLabel = new JLabel("Thanks for your participation!");
         thankYouLabel.setFont(CustomFonts.FONT);
-        thankYouLabel.setBounds(10, 10, 200, 20);
+        thankYouLabel.setHorizontalAlignment(JLabel.CENTER);
 
         // Add components to the panel
         panel.add(thankYouLabel, BorderLayout.CENTER);

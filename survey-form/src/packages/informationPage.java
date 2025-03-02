@@ -17,26 +17,27 @@ public class informationPage {
         panel.setBounds(0, 0, 600, 600);
         panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
         panel.setBackground(Color.yellow);
+        panel.add(Box.createRigidArea(new Dimension(10, 10)));
 
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("Name");
         nameLabel.setFont(CustomFonts.FONT);
         nameLabel.setBounds(10, 10, 100, 20);
-        JTextField nameField = new JTextField(15);
+        JTextField nameField = new JTextField(10);
         nameField.setBounds(50, 10, 100, 20);
 
         // Age Label and Text Field
         JLabel ageLabel = new JLabel("Age");
         ageLabel.setFont(CustomFonts.FONT);
         ageLabel.setBounds(10, 50, 100, 20);
-        JTextField ageField = new JTextField(15);
+        JTextField ageField = new JTextField(10);
         ageField.setBounds(50, 50, 100, 20);
 
         // Email Label and Text Field
         JLabel emailLabel = new JLabel("Email");
         emailLabel.setFont(CustomFonts.FONT);
         emailLabel.setBounds(10, 90, 100, 20);
-        JTextField emailField = new JTextField(15);
+        JTextField emailField = new JTextField(10);
         emailField.setBounds(50, 90, 100, 20);
 
         // Software Familiarity Level

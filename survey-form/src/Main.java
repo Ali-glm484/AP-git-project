@@ -28,12 +28,12 @@ public class Main {
         // Create title label
         JLabel title = new JLabel("Survey form");
         title.setFont(CustomFonts.FONT);
-        title.setBounds(10, 10, 100, 20);
+        title.setHorizontalAlignment(JLabel.CENTER);
 
         // Create start button
         JButton startButton = new JButton("Start!");
         startButton.setFont(CustomFonts.FONT);
-        startButton.setBounds(10, 40, 100, 20);
+
 
         // Add components to the panel
         panel.add(title, BorderLayout.NORTH);
