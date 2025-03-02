@@ -23,6 +23,7 @@ public class Main {
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
         panel.setBounds(0, 0, 600, 600);
+        panel.setBackground(Color.yellow);
 
         // Create title label
         JLabel title = new JLabel("Survey form");
