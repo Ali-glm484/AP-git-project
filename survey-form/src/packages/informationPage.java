@@ -14,7 +14,7 @@ public class informationPage {
     public void create(JFrame frame) {
         // Create the main panel
         JPanel panel = new JPanel();
-        panel.setBounds(0, 0, 800, 800);
+        panel.setBounds(0, 0, 750, 750);
         panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
         panel.setBackground(Color.yellow);
         panel.add(Box.createRigidArea(new Dimension(10, 10)));
@@ -69,6 +69,7 @@ public class informationPage {
         JButton nextButton = new JButton("Next page");
         nextButton.setFont(CustomFonts.FONT);
         nextButton.setBounds(10, 200, 100, 20);
+        nextButton.setHorizontalAlignment(SwingConstants.CENTER);
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
             frame.remove(panel);
