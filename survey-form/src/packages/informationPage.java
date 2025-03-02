@@ -14,7 +14,7 @@ public class informationPage {
     public void create(JFrame frame) {
         // Create the main panel
         JPanel panel = new JPanel();
-        panel.setBounds(0, 0, 600, 600);
+        panel.setBounds(0, 0, 800, 800);
         panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
         panel.setBackground(Color.yellow);
         panel.add(Box.createRigidArea(new Dimension(10, 10)));
