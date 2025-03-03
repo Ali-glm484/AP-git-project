@@ -1,6 +1,7 @@
 package packages;
 
 import javax.swing.*;
+import javax.swing.plaf.basic.BasicScrollBarUI;
 import java.awt.*;
 
 public class informationPage {
@@ -13,28 +14,30 @@ public class informationPage {
     public void create(JFrame frame) {
         // Create the main panel
         JPanel panel = new JPanel();
-        panel.setBounds(0, 0, 600, 600);
-        panel.setLayout(null);
+        panel.setBounds(0, 0, 750, 750);
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+        panel.setBackground(Color.yellow);
+        panel.add(Box.createRigidArea(new Dimension(10, 10)));
 
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("Name");
         nameLabel.setFont(CustomFonts.FONT);
         nameLabel.setBounds(10, 10, 100, 20);
-        JTextField nameField = new JTextField(15);
+        JTextField nameField = new JTextField(10);
         nameField.setBounds(50, 10, 100, 20);
 
         // Age Label and Text Field
         JLabel ageLabel = new JLabel("Age");
         ageLabel.setFont(CustomFonts.FONT);
         ageLabel.setBounds(10, 50, 100, 20);
-        JTextField ageField = new JTextField(15);
+        JTextField ageField = new JTextField(10);
         ageField.setBounds(50, 50, 100, 20);
 
         // Email Label and Text Field
         JLabel emailLabel = new JLabel("Email");
         emailLabel.setFont(CustomFonts.FONT);
         emailLabel.setBounds(10, 90, 100, 20);
-        JTextField emailField = new JTextField(15);
+        JTextField emailField = new JTextField(10);
         emailField.setBounds(50, 90, 100, 20);
 
         // Software Familiarity Level
@@ -66,6 +69,7 @@ public class informationPage {
         JButton nextButton = new JButton("Next page");
         nextButton.setFont(CustomFonts.FONT);
         nextButton.setBounds(10, 200, 100, 20);
+        nextButton.setHorizontalAlignment(SwingConstants.CENTER);
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
             frame.remove(panel);

@@ -14,29 +14,30 @@ public class Main {
         // Create and configure the main frame
         JFrame frame = new JFrame("Survey form");
         frame.setFont(CustomFonts.FONT);
-        frame.setSize(600, 600);
+        frame.setSize(800, 800);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
 
         // Create and configure the main panel
         JPanel panel = new JPanel();
-        panel.setLayout(null);
-        panel.setBounds(0, 0, 600, 600);
+        panel.setLayout(new BorderLayout());
+        panel.setBounds(0, 0, 800, 800);
+        panel.setBackground(Color.yellow);
 
         // Create title label
         JLabel title = new JLabel("Survey form");
         title.setFont(CustomFonts.FONT);
-        title.setBounds(10, 10, 100, 20);
+        title.setHorizontalAlignment(JLabel.CENTER);
 
         // Create start button
         JButton startButton = new JButton("Start!");
         startButton.setFont(CustomFonts.FONT);
-        startButton.setBounds(10, 40, 100, 20);
+
 
         // Add components to the panel
-        panel.add(title);
-        panel.add(startButton);
+        panel.add(title, BorderLayout.NORTH);
+        panel.add(startButton, BorderLayout.CENTER);
 
         // Add panel to the frame
         frame.add(panel);
